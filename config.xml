@@ -1,0 +1,29 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<widget id="ReligiaSatanista" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Religia Satanistă</name>
+    <description>
+       Icoane, rugăciuni, imagini, statut, Biblie... le poți avea mereu fără a te conecta la internet.
+    </description>
+    <author email="religiasatanista@gmail.com" href="http://religiasatanista.ro">
+        Vitalicus
+    </author>
+    <content src="index.html" />
+    <preference name="permissions" value="none" />
+    <preference name="fullscreen" value="true" />
+    <icon src="www/icon.png" />
+	<gap:plugin name="net.yoik.cordova.plugins.screenorientation" version="1.3.1" />
+	
+	<gap:config-file platform="android" parent="/manifest">
+    <supports-screens 
+        android:xlargeScreens="false" 
+        android:largeScreens="false" 
+        android:smallScreens="true" />
+</gap:config-file>
+
+
+    <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
+    <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
+    <icon gap:platform="android" gap:qualifier="hdpi" src="www/res/icon/android/icon-72-hdpi.png" />
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="www/res/icon/android/icon-96-xhdpi.png" />
+    <access origin="*" />
+</widget>
