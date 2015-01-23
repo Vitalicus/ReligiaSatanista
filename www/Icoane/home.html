@@ -1,0 +1,88 @@
+﻿
+<html>
+<head>
+  <meta charset="UTF-8">
+ <script src="http://code.jquery.com/jquery-1.3.2.js"></script>
+<link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../idangerous.swiper.css">
+<script>
+function arata(){
+var e=document.getElementById("ss").style.visibility;
+var el = document.getElementsByClassName("arata");
+if(e=='visible'){
+for (var i=0;i<el.length; i++) {
+    el[i].style.visibility="hidden";
+}
+}else{
+for (var i=0;i<el.length; i++) {
+    el[i].style.visibility="visible";
+}
+}
+}
+
+</script>
+</head>
+<body>
+
+<div class="container">
+<div class="outer">
+<div class="inner"><img src="../menu.png" class="show_hide"></div>
+</div>
+</div> 
+
+<div class="slidingDiv">
+<iframe src="../Menu/menu.html" frameborder="0" width="100%" height="100%"></iframe>
+
+</div>
+
+
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper" >
+      <div class="swiper-slide">
+	<span class="info"> <img src="i.png" onclick="arata()"><div id="ss"  class="arata">"Sfânta Pussy" - Această icoană este salvatoarea și apărătoarea de oameni răi, de îndoctrinați, pochi ș.a. Simbol al libertății </div></span>
+		<img src="images/01.jpg" class="sl">		
+      </div>
+	  <div class="swiper-slide">
+	<span class="info"> <img src="i.png" onclick="arata()"><div class="arata">"Sfânta pistă" - Așa o mai numeau vecinii pe Maria Troăreasa, care ar fi născut de la un duh. Icoană a iubirii și ingeniozității.</div></span>
+		<img src="images/02.jpg" class="sl">
+      </div>
+      <div class="swiper-slide">
+	 <span class="info"> <img src="i.png" onclick="arata()"><div class="arata">"Sfântul Chuck" - Chuck Norris făcea posibil orice lucru chiar greu de imaginat. Icoana ce se folosește pentru a da încredere și putere</div></span>
+      <img src="images/03.jpg" class="sl">
+      </div>
+      <div class="swiper-slide"><span class="info">
+	  <img src="i.png" onclick="arata()"><div class="arata">"Sfintele Mucenițe Pussy" - Femeile ce au trecut prin chinurile închisorilor și au știut să rămână cu demnitate.</div></span>
+      <img src="images/04.jpg" class="sl">
+      </div>
+      <div class="swiper-slide"><span class="info">
+	  <img src="i.png" onclick="arata()"><div class="arata">"Îngerul Turbat sau Sfântul Bathomet" - Ajută la căpătarea încrederii de către cei dimprejur și la devenirea liderului lor.</div></span>
+        <img src="images/05.jpg" class="sl">
+      </div>
+      <div class="swiper-slide"><span class="info">
+	  <img src="i.png" onclick="arata()"><div class="arata">"Regele Satan" - Ajută la orice. Se folosește doar când aveți probleme sau necesități foarte mari. Nu se deranjează cu lucruri simple că poate fi chiar periculos.</div></span>
+        <img src="images/06.jpg" class="sl">
+      </div>
+      <div class="swiper-slide"><span class="info">
+	  <img src="i.png" onclick="arata()"><div class="arata">"Preafericitul Vitalicus" - Se roagă la această icoană înainte de a face trolling, sau înainte de o emisiune, sau un discurs politic.</div></span>
+       <img src="images/07.jpg" class="sl"> 
+      </div>
+     
+    </div>
+    <div class="pagination"></div>
+  </div>
+ 
+  <script src="../idangerous.swiper.min.js"></script>
+  <script>
+  var mySwiper = new Swiper('.swiper-container',{
+    pagination: '.pagination',
+    paginationClickable: false
+  })
+  
+  	$('.show_hide').click(function () {
+    $(".slidingDiv").toggle("slide");
+});
+
+  </script>
+</body>
+</html>
